@@ -2,6 +2,7 @@
 title:  "Java 제네릭"
 category: posts
 tags:
+  - 이펙티브 자바
   - java
   - generic
 comments: true
