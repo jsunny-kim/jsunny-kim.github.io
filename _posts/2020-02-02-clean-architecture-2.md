@@ -61,8 +61,6 @@ last_modified_at: 2020-02-02T10:45:00
 
 ​    구조적 프로그래밍은 프로그램을 증명 가능한 단위로 세분화할 것을 강요한다. 그리고 나서 테스트를 통해 해당 기능을 증명하려고 노력해야 한다.
 
-​    
-
 ## 5장. 객체 지향 프로그래밍
 
 > 객체 지향(`Object-Oriented`)의 본질을 설명하기 위한 세 가지 개념. **캡슐화**, **상속**, **다형성**.
@@ -93,6 +91,9 @@ last_modified_at: 2020-02-02T10:45:00
 
 > 객체 지향 언어가 다형성을 안전하고 편리하게 제공한다는 사실은 소스 코드 의존성을 어디에서든 역전시킬 수 있다는 뜻이기도 하다.
 
+![](http://www.plantuml.com/plantuml/svg/SoWkIImgAStDuShCAqajIajCJbNmXBEgkRGLt4hpaaioy_CqDBbgkP9p4ekB5HnzyrDASr8LCdCBSb9pK_DAYWdhSOBeuOBI2hgwTd1D254zFJkOwLmEgNafG8S10000)
+![](http://www.plantuml.com/plantuml/svg/SoWkIImgAStDuOeEzOnLqDMrKuXsAYtEp4ijBbO8Air9BOxbGXTGqDEpKm0gnoNZabYIc9HOd0gKXp5ncEoGcfS2j1i0)
+
 ​    객체 지향 언어를 통해 소스 코드 의존성이 제어흐름의 방향과 일치되도록 제한되지 않고, 의존성 전부에 대해 방향을 결정할 수 있는 절대적인 권한을 갖는다.
 
 ## 6장. 함수형 프로그래밍
@@ -108,5 +109,7 @@ last_modified_at: 2020-02-02T10:45:00
 ​    단, 완벽한 불변성을 실현하기 위해서는 무한한 저장 공간과 무한히 빠른 프로세서 속도가 요구된다. 따라서 우리는 불변성 실현에 대해 어떤 타협이 필요하다.
 
 ### 가변성의 분리
+
+![](http://www.plantuml.com/plantuml/svg/SoWkIImgAStDuKehIinDLL1wlQtZzUO6XJUxjxpjN_EwfUTjrmubXMgkQ6VJM21X0YACGOGHY32CvQe5IodewjefH2kzsj20eHciZP02Oq8AZ0WfCCIl08UuWWr44v3pUjwSD_FMlccTeV1wvPJNgrQyNhO6gCyXDIy563e0)
 
 ​    불변성과 관련한 주요한 타협 중 하나는 애플리케이션 내부의 서비스를 가변 컴포넌트와 불변 컴포넌트로 분리하는 일이다. 불변 컴포넌트에서는 순수 함수형 방식의 작업만 존재한다. 불변 컴포넌트는 변수의 상태 변경을 위해 하나 이상의 다른 컴포넌트와 서로 통신한다. 여기서 상태 변경을 통해 컴포넌트가 동시성 문제에 노출되지 않도록, 트랜잭션 메모리(`transactional memory`)와 같은 실천법을 사용하여 동시성 문제로부터 가변 변수를 보호한다.
